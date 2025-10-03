@@ -3,8 +3,8 @@ name: Build Calendar Page
 on:
   push:
     branches: ["main"]
-    paths:
-      - 'calendar.ics'
+    # paths:
+      # - 'calendar.ics'
 
 permissions:
   contents: write
