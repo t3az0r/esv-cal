@@ -22,7 +22,7 @@ events.sort(key=lambda x: x[0])
 # HTML generieren
 html = "<!doctype html><html><head><meta charset='utf-8'><title>Kalender</title>"
 html += "<style>.home {background-color: #FF0}</style>"
-html += "</head><body><h1>Kalender</h1><ul>"
+html += "</head><body><h1>ESV Kalender</h1><ul>"
 for start, summary in events:
     css_class = "home" if "(H)" in str(summary) else "gone"
     date_str = start.strftime('%Y-%m-%d %H:%M') if isinstance(start, datetime) else str(start)
@@ -34,3 +34,5 @@ html_path.parent.mkdir(exist_ok=True)
 with open(html_path, "w", encoding="utf-8") as f:
     f.write(html)
 
+# debug
+print(html)
