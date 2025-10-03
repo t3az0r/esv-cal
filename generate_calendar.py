@@ -31,3 +31,6 @@ html += "</ul></body></html>"
 html_path.parent.mkdir(exist_ok=True)
 with open(html_path, "w", encoding="utf-8") as f:
     f.write(html)
+
+# debug
+print(html)
