@@ -2,6 +2,7 @@ name: Build Calendar Page
 
 on:
   push:
+    branches: ["main"]
     paths:
       - 'calendar.ics'
 
