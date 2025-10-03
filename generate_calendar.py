@@ -20,11 +20,13 @@ for component in cal.walk():
 events.sort(key=lambda x: x[0])
 
 # HTML generieren
-html = "<!doctype html><html><head><meta charset='utf-8'><title>Kalender</title></head><body>"
-html += "<h1>Kalender</h1><ul>"
+html = "<!doctype html><html><head><meta charset='utf-8'><title>Kalender</title>"
+html += "<style>.home {background-color: #FF0}</style>"
+html += "</head><body><h1>Kalender</h1><ul>"
 for start, summary in events:
+    css_class = "home" if "(H)" in str(summary) else "gone"
     date_str = start.strftime('%Y-%m-%d %H:%M') if isinstance(start, datetime) else str(start)
-    html += f"<li><b>{date_str}</b>: {summary}</li>"
+    html += f"<li class={css_class}><b>{date_str}</b>: {summary}</li>"
 html += "</ul></body></html>"
 
 # HTML schreiben
