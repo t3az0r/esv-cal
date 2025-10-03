@@ -20,7 +20,7 @@ for component in cal.walk():
 events.sort(key=lambda x: x[0])
 
 # HTML generieren
-html = "<!doctype html><html><head><meta charset='utf-8'><title>Kalender</title>"
+html = "<!doctype html><html><head><meta charset='utf-8'><title>ESV Kalender</title>"
 html += "<style>.home {background-color: #FF0}</style>"
 html += "</head><body><h1>ESV Kalender</h1><ul>"
 for start, summary in events:
