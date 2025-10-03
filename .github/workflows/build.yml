@@ -19,6 +19,8 @@ jobs:
           python-version: '3.x'
       - name: Install Dependencies
         run: pip install icalendar
+      - name: Pull ics
+        run: curl -o calendar.ics "https://calendar.google.com/calendar/ical/59c641f177997a12b88aeb96604748fe45b5f638e1784ea538efd71975f74ce3%40group.calendar.google.com/private-5ddff8d2bb96848c543903c54a41df88/basic.ics"
       - name: Generate HTML Calendar
         run: python generate_calendar.py
       - name: Commit and Push changes
