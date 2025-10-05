@@ -36,6 +36,7 @@ jobs:
           git commit -m "Update calendar page from ics" || echo "No changes to commit"
           git push
   deploy:
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
