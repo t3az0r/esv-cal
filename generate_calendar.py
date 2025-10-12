@@ -35,6 +35,11 @@ html = """<!doctype html>
     <meta charset='utf-8' />
     <title>ESV Kalender</title>
     <style>
+      body {
+        background-color: lightblue;
+        font-size: 1.5em;
+        font-family: monospace;
+      }
       .home {
         background-color: #FF0
       }
