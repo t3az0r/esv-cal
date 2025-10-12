@@ -37,7 +37,7 @@ html = """<!doctype html>
     <style>
       body {
         background-color: lightblue;
-        font-size: 1.5em;
+        font-size: 1.2em;
         font-family: monospace;
       }
       .home {
