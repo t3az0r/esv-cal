@@ -54,7 +54,7 @@ html = """<!doctype html>
   <body>
     <h1>ESV Kalender</h1>
     <div id="header">
-      <a href="week.html">Woche</a>
+      <a href="week.html">Diese Woche</a>
     </div>
     <ul>
 """
