@@ -53,6 +53,9 @@ html = """<!doctype html>
   </head>
   <body>
     <h1>ESV Kalender</h1>
+    <div id="header">
+      <a href="week.html">Woche</a>
+    </div>
     <ul>
 """
 
