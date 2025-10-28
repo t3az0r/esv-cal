@@ -10,6 +10,29 @@
         font-size: 1.2em;
         font-family: monospace;
       }
+      .print-btn {
+        position: fixed;
+        top: 16px;
+        right: 24px;
+        z-index: 9999;
+        background: #fff;
+        color: #444;
+        border: 1px solid #aaa;
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 1rem;
+        text-decoration: none;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        transition: background 0.3s;
+      }
+      .print-btn:hover {
+        background: #eee;
+        color: #000;
+      }
+      @media print {
+        .noprint { display: none !important; }
+      }
+
       .home {  background-color: #FF0 }
       .sev_1 { background-color: #FC0 }
       .sev_2 { background-color: #F90 }
@@ -18,13 +41,10 @@
     </style>
   </head>
 
-  <body>
+  <body><a href="#" onclick="window.print();" class="print-btn noprint">Drucken</a>
     <h1>ESV Kalender</h1>
     <div id="header">
       <a href="week.html" class="noprint">Diese Woche</a>
-    </div>
-    <div id="printheader">
-      <a href="#" onclick="window.print();" class="noprint">Drucken</a>
     </div>
     <ul>
       <li class="gone sev_1 past"><b>Mo. 08.09.2025 20:00</b>: (A) ESV Rot-Weiß Göttingen III - ESV IV</li>
