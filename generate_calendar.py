@@ -50,6 +50,7 @@ entries.sort(key=lambda x: x.get('start'))
 html_head = """<!doctype html>
 <html>
   <head>
+    <link rel="stylesheet" href="print.css" media="print">
     <meta charset='utf-8' />
     <title>ESV Kalender</title>
     <style>
@@ -80,6 +81,9 @@ index_html += """
     <div id="header">
       <a href="week.html">Diese Woche</a>
     </div>
+    <div id="printheader">
+      <a href="#" onclick="window.print();" class="noprint">Drucken</a>
+    </div>
     <ul>
 """
 
@@ -88,6 +92,7 @@ week_html += """
     <h1>Diese Woche</h1>
     <div id="header">
       <a href="index.html">ESV Kalender</a>
+      <a href="week_wa.txt">WA Post</a>
     </div>
     <ul>
 """
