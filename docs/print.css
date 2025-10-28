@@ -1,0 +1,33 @@
+/* print.css */
+@media print {
+  body, html {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  a, a:visited {
+    color: #000 !important;
+    text-decoration: underline;
+  }
+  header, nav, footer, .noprint {
+    display: none !important;
+  }
+  img {
+    filter: grayscale(100%);
+    max-width: 100%;
+    height: auto;
+  }
+  h1, h2, h3, h4 {
+    color: #000 !important;
+    border: none !important;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #000 !important;
+    color: #000 !important;
+    background: #fff !important;
+    padding: 4px 8px;
+  }
+  /* Weitere notwendige Anpassungen hier */
+}
