@@ -79,7 +79,7 @@ index_html += """
   <body>
     <h1>ESV Kalender</h1>
     <div id="header">
-      <a href="week.html">Diese Woche</a>
+      <a href="week.html" class="noprint">Diese Woche</a>
     </div>
     <div id="printheader">
       <a href="#" onclick="window.print();" class="noprint">Drucken</a>
@@ -91,8 +91,8 @@ week_html += """
   <body>
     <h1>Diese Woche</h1>
     <div id="header">
-      <a href="index.html">ESV Kalender</a>
-      <a href="week_wa.txt">WA Post</a>
+      <a href="index.html" class="noprint">ESV Kalender</a>
+      <a href="week_wa.txt" class="noprint">WA Post</a>
     </div>
     <ul>
 """
