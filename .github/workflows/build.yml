@@ -35,6 +35,7 @@ jobs:
           git pull
           git add docs/index.html
           git add docs/week.html
+          git add docs/week_wa.txt
           git commit -m "Update calendar page from ics" || echo "No changes to commit"
           git push
       - name: Upload build artifacts
