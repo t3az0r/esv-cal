@@ -32,6 +32,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull
           git add docs/index.html
           git add docs/week.html
           git commit -m "Update calendar page from ics" || echo "No changes to commit"
