@@ -134,6 +134,9 @@ for d in entries:
 for e in entries:
     (start, summary, severity, location) = (e['start'], e['summary'], e['severity'], e['location'])
 
+    if str(start.date()) < '2026-01-01':
+        continue
+        
     if start.date() < today:
         past = ' past'
     else:
